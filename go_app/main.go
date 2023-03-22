@@ -1,5 +1,5 @@
-// Created by: Mr Coxall
-// Created on: Sep 2020
+// Created by: Dominic M.
+// Created on: March 2023
 //
 // This program finds the area and perimeter of a rectangle
 
