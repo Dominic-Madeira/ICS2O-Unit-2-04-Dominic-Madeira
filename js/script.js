@@ -10,12 +10,15 @@
  */
 function myButtonClicked () {
   // input
-  const base = parseInt(document.getElementById('base-length').value)
-  const height = parseInt(document.getElementById('height-triangle').value)
+  const params = new URLSearchParams(document.location.search)
+
+  const base = params.get('b')
+  const height = params.get('h')
 
   // process
   const area = (base * height) / 2
 
   // output
+  document.getElementById('dimensions').innerHTML = 'The base of the triangle is: ' + base + ' cm'
   document.getElementById('area').innerHTML = 'The Area of the triangle is: ' + area + ' cm²'
 }
