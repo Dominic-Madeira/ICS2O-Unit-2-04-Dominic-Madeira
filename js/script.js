@@ -8,7 +8,7 @@
 /**
  * This function calculates area and perimeter of rectangle.
  */
-function myButtonClicked () {
+window.onload = function () {
   // input
   const params = new URLSearchParams(document.location.search)
 
@@ -19,6 +19,7 @@ function myButtonClicked () {
   const area = (base * height) / 2
 
   // output
-  document.getElementById('dimensions').innerHTML = 'The base of the triangle is: ' + base + ' cm'
-  document.getElementById('area').innerHTML = 'The Area of the triangle is: ' + area + ' cm²'
+  document.getElementById('base').innerHTML = 'The base of the triangle is: ' + base + ' cm'
+  document.getElementById('height').innerHTML = 'The height of the triangle is: ' + height + ' cm'
+  document.getElementById('area').innerHTML = 'The area of the triangle is: ' + area + ' cm²'
 }
